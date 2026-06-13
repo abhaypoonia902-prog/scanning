@@ -11,11 +11,10 @@ from datetime import datetime
 
 from flask import Flask, request, jsonify, Response
 
-from modules.log_parser       import LogParser
-from modules.log_analyzer     import LogAnalyzer
-from modules.chart_generator  import ChartGenerator
-from modules.report_generator import generate_report
-
+from log_parser import LogParser
+from log_analyzer import LogAnalyzer
+from chart_generator import ChartGenerator
+from report_generator import generate_report
 # ─── App Setup ───────────────────────────────────────────────────────────────
 
 app = Flask(__name__)
